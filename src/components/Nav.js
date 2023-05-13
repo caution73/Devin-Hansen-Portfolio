@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom"
 
 export default function Nav() {
-    const links = ["My work", "My skills", "My life"]
+    const links = ["Home", "Qualifications", "About"]
     return(
         <div className="nav">
             {links.map((link, i) => {
                 return(
-                    <Link to={`/${link}`}>
+                    <Link to={`/${link}`} className="navLink">
                         <div>
                             <h4>{link}</h4>
                         </div>
