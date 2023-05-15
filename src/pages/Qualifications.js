@@ -27,7 +27,7 @@ export default function Qualifications() {
     "Critical Thinking",
   ];
   return (
-    <div>
+    <div className="qualificationsPage">
       <h4>Here are my qualifications</h4>
       <div className="skillsContainer">
         <div className="techSkills">
