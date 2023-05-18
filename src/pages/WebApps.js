@@ -1,18 +1,16 @@
-import { webApps } from "../assets/MyWorks"
+import MyWorks from "../assets/MyWorks";
+import WebApp from "../components/WebApp";
 
 export default function WebApps() {
-    const apps = webApps
-    console.log(webApps)
+    const apps = MyWorks[0]
+    console.log(apps)
     return(
         <div>
-            <h4>Here's the webapps page</h4>
-            {/* {apps.map((webApp) => {
+            {apps?.webApps.map((app, idx) => {
                 return(
-                    <div>
-                        {webApp.title}
-                    </div>
+                    <WebApp key={idx} {...app}/>
                 )
-            })} */}
+            })}
         </div>
     )
 }

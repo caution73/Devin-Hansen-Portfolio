@@ -270,4 +270,15 @@ a {
   padding-top:0;
 }
 
+.webAppCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.webAppImg {
+  width: 70%;
+}
+
 /*  voted palette: https://coolors.co/palette/386641-6a994e-a7c957-f2e8cf-bc4749 */

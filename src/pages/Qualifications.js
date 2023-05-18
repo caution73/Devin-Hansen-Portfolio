@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+
 export default function Qualifications() {
   const techSkillsArr = [
     "HTML",
@@ -26,9 +27,10 @@ export default function Qualifications() {
     "Patience",
     "Critical Thinking",
   ];
+
   return (
     <div className="qualificationsPage">
-      <h4>Here are my qualifications</h4>
+      {/* <h4>Here are my qualifications</h4> */}
       <div className="skillsContainer">
         <div className="techSkills">
           <ul className="techSkillsList">
@@ -60,7 +62,7 @@ export default function Qualifications() {
 
         <h2>Algorithms</h2>
         <div className="algosCont">
-        <Link to="/algorithms" id="algosLink">
+        <Link to="/algorithms" id="algosLink" >
           <img src="luhn-algo-screenshot.PNG" width="100%" className="imgLink"/>
           </Link>
           
