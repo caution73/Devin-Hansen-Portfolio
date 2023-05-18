@@ -54,6 +54,9 @@ header {
 
 .qualificationsPage {
   padding-bottom: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 a {
@@ -75,8 +78,6 @@ li {
 }
   
 
-
-
 footer {
   justify-self: right;
   margin-bottom: 0;
@@ -91,12 +92,12 @@ footer {
 }
 
 #homePage {
-  border: 2px solid lightgreen;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 5vh;
+  padding-top: 0;
 }
 
 strong {
@@ -120,16 +121,18 @@ ul {
 .about {
   width: 80%;
   margin-left: 10%;
+  margin-bottom: 10vh;
 }
 
-footer > a > h4 {
-  margin: 0;
-}
 
 footer {
   padding: 1vh;
   padding-bottom: 3vh;
 
+}
+
+.imgContainer {
+  padding: auto;
 }
 
 .imgCarouselContainer {
@@ -156,8 +159,9 @@ footer {
 
 .imageArrow:hover,
 .imageArrow:focus{
-  background-color: rgba(0, 0, 0, 0.7);
+  text-shadow: 5px 5px #000000;
   color: white;
+  font-size: 270%;
 }
 
 #imageArrowLeft {
@@ -175,3 +179,95 @@ h5 {
 h6 {
   margin: 0;
 }
+
+.footerLink {
+  color:#6a5454;
+  text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+  text-align:center;
+  font-size: larger;
+}
+
+footer > h4 {
+  margin: 0;
+}
+
+.footerLink:hover {
+   font-size: x-large;
+   text-shadow:1px 1px 10px #a8a8a8, 1px 1px 10px #989898;
+}
+
+.carouselImg {
+  max-height: 30vw;
+  outline: solid 0px #dadada;
+  transition: outline 0.1s linear;
+  margin: 0.5em;
+}
+
+.carouselImg:hover {
+  outline-width: 3px; 
+  transform: scale(1.005);
+}
+
+#webappsLinkCont {
+  margin: 5vw;
+  margin-bottom: 8vh;
+  margin-top: 3vh;
+
+}
+
+#webappsLink {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: lightblue;
+}
+
+.qualsLower {
+  border: 2px solid white;
+  margin: 2vw;
+  width: 70%;
+  justify-self: center;
+  background-color: black;
+  border-radius: 25px;
+}
+
+.qualsLower > * {
+  margin: 2vh;
+}
+
+
+#algosLink {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  outline: 2px solid white;
+  border-radius: 25px;
+  
+}
+
+.imgLink:hover {
+  transform: scale(1.01);
+  outline: 7px solid white;
+  box-shadow: rgba(222, 222, 255, 0.25) 0px 50px 100px -20px, rgba(255, 198, 198, 0.3) 0px 30px 60px -30px, rgba(185, 218, 250, 0.35) 0px -2px 6px 0px inset;
+}
+
+.imgLink {
+  border-radius: 25px;
+  transition: .5s;
+}
+
+.algosCont {
+  background-color: black;
+  padding: 10vw;
+  padding-top:0;
+}
+
+/*  voted palette: https://coolors.co/palette/386641-6a994e-a7c957-f2e8cf-bc4749 */

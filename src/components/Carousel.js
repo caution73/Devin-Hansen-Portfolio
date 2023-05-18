@@ -33,23 +33,26 @@ export default function Carousel({ images }) {
           // For each image, create the image and check to see if it should be displayed as current Image.
           return (
             <div className="carouselWrapper">
-              <a href={image.link} target="_blank">
                 <div
                   className={idx === currentImage ? "imgActive" : "imgInactive"}
                   key={idx}
                 >
                   {idx === currentImage && (
-                    <img
-                      className="carouselImg"
-                      src={image.url}
-                      alt={image.alt}
-                      width="70%"
-                    />
+                    <div className="imgContainer">
+                      <a href={image.link} target="_blank">
+                      <img
+                        className="carouselImg"
+                        src={image.url}
+                        alt={image.alt}
+                        width="70%"
+                      />
+                      </a>
+                      <h5>{image.imgTitle}</h5>
+                      <h6>Tech used: {image.tech}</h6>
+                    </div>
                   )}
                 </div>
-              </a>
-              <h5>{image.imgTitle}</h5>
-              <h6>Tech used: {image.tech}</h6>
+              
             </div>
           );
         })}
