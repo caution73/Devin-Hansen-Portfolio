@@ -8,18 +8,16 @@ body {
   flex-direction: column;
 }
 
+
 header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: black;
   background-image: linear-gradient(black, rgb(38, 35, 35));
   padding-bottom: 5vh;
-}
-
-#headerText {
-  flex: 1;
-  margin-right: 10vw;
+  padding-top: 5vh;
 }
 
 #headerText > * {
@@ -34,22 +32,31 @@ header {
 
 .nav {
   color: white;
-  height: 10vh;
-  width: 15vh;
-  border-radius: 10px;
-  margin-left: 3vw;
+  background-color: darkred;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  z-index: 5;
+  justify-content: center;
+  /* margin-left: 3vw; */
+  display: flex;
+  margin-top: 5vh;
 }
+
 
 .navLink {
   padding: 1vh;
-  border: 2px solid black;
-  border-radius: 10px;
-  background-color: darkred;
   text-decoration: none;
   color: white;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.navLink:hover {
+  background-color: rgb(87, 21, 21);
+  transition: 1s;
+}
+
+.navLinkText {
+  margin: 0;
 }
 
 .qualificationsPage {
@@ -83,7 +90,10 @@ footer {
   margin-bottom: 0;
   background-color: white;
   color: black;
+  padding: 1vh;
+  padding-bottom: 3vh;
 }
+
 
 .carousel {
   background-color: lightblue;
@@ -122,13 +132,6 @@ ul {
   width: 80%;
   margin-left: 10%;
   margin-bottom: 10vh;
-}
-
-
-footer {
-  padding: 1vh;
-  padding-bottom: 3vh;
-
 }
 
 .imgContainer {
@@ -194,6 +197,7 @@ footer > h4 {
 .footerLink:hover {
    font-size: x-large;
    text-shadow:1px 1px 10px #a8a8a8, 1px 1px 10px #989898;
+   transition: .5s;
 }
 
 .carouselImg {
@@ -275,6 +279,11 @@ a {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-bottom: 6vh;
+}
+
+.webAppCont > * {
+  margin: 0;
 }
 
 .webAppImg {
