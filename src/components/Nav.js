@@ -1,22 +1,27 @@
 import { Link } from "react-router-dom"
-import { useState, setState} from 'react'
+import { useState } from 'react'
 
 export default function Nav() {
-    const [ open, setOpen ] = useState(false)
-    const links = ["Home", "Qualifications", "About"]
+    const [ open ] = useState(false)
     console.log(open)
     return(
         <div className="nav">
-        {links.map((link, i) => {
-                return(
-                    <Link to={`/${link}`} className="navLink">
+             <Link to={`/`} className="navLink">
                         <div>
-                            <h4 className="navLinkText">{link}</h4>
+                            <h4 className="navLinkText">Home</h4>
                         </div>
                     </Link>
-                )})
-                }
-            
+                    <Link to={`/qualifications`} className="navLink">
+                        <div>
+                            <h4 className="navLinkText">Qualifications</h4>
+                        </div>
+                    </Link>
+                    <Link to={`/about`} className="navLink">
+                        <div>
+                            <h4 className="navLinkText">About</h4>
+                        </div>
+                    </Link>
+
         </div>
     )
 }

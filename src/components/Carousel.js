@@ -39,7 +39,7 @@ export default function Carousel({ images }) {
                 >
                   {idx === currentImage && (
                     <div className="imgContainer">
-                      <a href={image.link} target="_blank">
+                      <a href={image.link} target="_blank" rel="noreferrer">
                       <img
                         className="carouselImg"
                         src={image.url}

@@ -55,7 +55,7 @@ export default function Qualifications() {
         <h2>Web Applications</h2>
         <div id="webappsLinkCont">
           <Link to="/webapps" id="webappsLink">
-            <img src="RoadTripCentralHome--Screenshot.PNG" width="100%" className="imgLink"/>
+            <img src="RoadTripCentralHome--Screenshot.PNG" alt="Screenshot of RoadTripCentral's home page." width="100%" className="imgLink"/>
           </Link>
           
         </div>
@@ -63,7 +63,7 @@ export default function Qualifications() {
         <h2>Algorithms</h2>
         <div className="algosCont">
         <Link to="/algorithms" id="algosLink" >
-          <img src="luhn-algo-screenshot.PNG" width="100%" className="imgLink"/>
+          <img src="luhn-algo-screenshot.PNG" alt="The Luhn algorithm, various forms." width="100%" className="imgLink"/>
           </Link>
           
           
