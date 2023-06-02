@@ -32,6 +32,14 @@ const MyWorks = [
         repoLink:
           "https://codesandbox.io/s/luhn-algorithm-dhansen-forked-6kvuvk",
       },
+      {
+        title: "First Non-Repeat",
+        alt: "This code will takes a string input from the user and then returns the first non-repeating character.",
+        article: "",
+        tech: "Javascript, using loops and conditionals.",
+        url: "nonrepeat-screenshot.PNG",
+        repoLink: "https://codesandbox.io/s/react-nonrepeat-devinh-forked-t0t8c2",
+      }
     ],
   },
 ];
